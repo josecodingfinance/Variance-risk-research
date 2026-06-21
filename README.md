@@ -52,4 +52,4 @@ notebooks/      # Exploration only (not source of truth)
 - **Costs are real.** Transaction costs, slippage, and bid-ask modeled explicitly.
 - **Test early.** Every new module ships with pytest tests.
 
-See `CLAUDE.md` for full context and roadmap.
+See `STEPS.md` for full context and roadmap.
