@@ -1,0 +1,32 @@
+# Gamma Capture Fund - Stage 1 Configuration
+# Long-gamma on SPX + VIX, 2015-2024
+
+# Universe
+tickers:
+  underlying: "^GSPC"    # SPX
+  vol_index: "^VIX"      # VIX
+
+# Backtest window
+dates:
+  start: "2015-01-01"
+  end: "2024-12-31"
+
+# Trading costs
+costs:
+  bid_ask_bps: 5         # bid-ask spread in basis points
+  rehedge_bps: 2         # transaction cost per rehedge
+  slippage_bps: 1        # slippage on fills
+
+# Caching
+data:
+  cache_dir: "data/cache"
+  synthetic_label: "[SYNTHETIC - NO REAL DATA]"
+
+# Rehedging rules (Stage 1)
+rehedge:
+  frequency: "daily"     # rebalance daily
+  delta_threshold: 0.05  # rehedge if |delta - target| > 5%
+
+# Variance strategy (Stage 1)
+variance:
+  notional: 100000       # dollars of variance exposure (0.5 * Γ * S²)
