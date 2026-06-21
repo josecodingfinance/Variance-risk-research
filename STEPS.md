@@ -1,4 +1,4 @@
-# CLAUDE.md — Gamma Capture Fund
+# STEPS.md — Gamma Capture Fund
 
 Context file for Claude Code. Read this before writing or editing anything in this repo.
 Project root: `~/quant/fund`.
@@ -67,7 +67,7 @@ Roll costs charged ONLY on roll dates (1st business day of month), quoted in
 ## 5. Repo structure
 
 fund/
-├── CLAUDE.md
+├── STEPS.md
 ├── config.yaml              # DO NOT edit without asking
 ├── src/
 │   ├── data/                # download + cache (DataWithSource), SPX/VIX
